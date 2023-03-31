@@ -17,7 +17,23 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        
+        s1 = ''
+        while l1 != None:
+            s1 = str(l1.val) + s1
+            l1 = l1.next
+        s2 = ''
+        while l2 != None:
+            s2 = str(l2.val) + s2
+            l2 = l2.next
+
+        x = int(s1) + int(s2)
+
+        next = None
+        for c in str(x):
+            next = ListNode(int(c), next)
+
+        return next
+
 # @lc code=end
-print(123)
+
 
