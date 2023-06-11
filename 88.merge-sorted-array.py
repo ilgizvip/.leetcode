@@ -13,3 +13,5 @@ class Solution:
         
 # @lc code=end
 
+def test_increment():
+    assert 4 == 4
